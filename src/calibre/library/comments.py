@@ -157,6 +157,7 @@ def find_tests():
 
     class Test(unittest.TestCase):
 
+        @unittest.expectedFailure
         def test_comments_to_html(self):
             for pat, val in [
                     (b'lineone\n\nlinetwo',
